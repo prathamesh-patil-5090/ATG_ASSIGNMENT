@@ -1,0 +1,48 @@
+.feed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.mobile-write-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #ff5c5c, #f0568a);
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .feed {
+    padding: 0;
+  }
+
+  .mobile-write-button {
+    display: flex;
+  }
+
+  .mobile-write-button svg {
+    width: 24px;
+    height: 24px;
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mobile-write-button {
+    display: none;
+  }
+}

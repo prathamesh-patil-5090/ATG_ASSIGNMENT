@@ -1,0 +1,68 @@
+.logo {
+  width: 160px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.brand-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007b5e;
+}
+
+.search-input {
+  background-color: #F2F2F2;
+  border: none;
+  padding: 10px 20px;
+}
+
+.search-input:focus {
+  box-shadow: none;
+  border-color: #007b5e;
+}
+
+.create-account {
+  color: #000;
+  font-weight: bold;
+}
+
+.create-account span {
+  font-weight: normal;
+  color: #2F6CE5;
+}
+
+.dropdown-icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 120px;
+    height: 30px;
+  }
+
+  .mobile-title {
+    font-size: 2rem;
+  }
+
+  .nav {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+  }
+}
+
+.overflow-auto {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}

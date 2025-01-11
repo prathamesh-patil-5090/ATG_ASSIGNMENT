@@ -1,0 +1,139 @@
+.logo {
+  width: 160px;
+  height: 40px;
+  object-fit: contain;  
+}
+
+.brand-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007b5e;
+}
+
+.search-input {
+  background-color: #F2F2F2;
+  border: none;
+  padding: 10px 20px;
+}
+
+.search-input:focus {
+  box-shadow: none;
+  border-color: #007b5e;
+}
+
+.create-account {
+  color: #000; 
+  font-weight: bold;
+}
+
+.create-account span {
+  font-weight: normal;
+  color: #2F6CE5;
+}
+
+.dropdown-icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 120px;
+    height: 30px;
+  }
+
+  .mobile-title {
+    font-size: 2rem;
+  }
+
+  .nav {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .mobile-filter-dropdown {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-bottom: 1px solid #E0E0E0;
+    background: white;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+  }
+
+  .mobile-filter-dropdown {
+    justify-content: flex-end; 
+  }
+
+  .mobile-filter-dropdown select {
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    appearance: none;
+    background: transparent;
+    padding-right: 24px;
+  }
+
+  .mobile-filter-select {
+    border: none;
+    background: #F2F2F2;
+    font-weight: 600;
+    font-size: 15px;
+    color: #333;
+    padding: 8px 35px 8px 15px;
+    border-radius: 4px;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: #343a40;
+  }
+}
+
+.overflow-auto {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nowrap {
+  white-space: nowrap;
+  min-width: max-content;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link:hover {
+  color: #0d6efd !important;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 40%; 
+  height: 1px;
+  left: 30%; 
+  bottom: 0;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover::after {
+  background-color: #0d6efd;
+}
